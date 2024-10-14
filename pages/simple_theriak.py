@@ -2,6 +2,7 @@ import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
 from pytheriak import wrapper
 
 # selections
@@ -19,7 +20,9 @@ with st.container(border=True):
 calc = st.button("run")
 
 if(calc):
-    theriak = wrapper.TherCaller(programs_dir="/build",
+    BUILD_DIR = os.path.join(os.path.abspath('.'), 'build')
+    print('BUILD_DIR - ', BUILD_DIR)
+    theriak = wrapper.TherCaller(programs_dir=BUILD_DIR,
                                  database=database_choice,
                                  theriak_version="v2023.01.02beta")
     rock, element_list = theriak.minimisation(pressure, temperature, bulk)
