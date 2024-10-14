@@ -20,8 +20,11 @@ with st.container(border=True):
 calc = st.button("run")
 
 if(calc):
-    BUILD_DIR = os.path.join(os.path.abspath('.'), 'build')
-    print('BUILD_DIR - ', BUILD_DIR)
+
+    dirname = os.path.dirname('.')
+    BUILD_DIR = os.path.join(dirname, 'theriak-domino/build/')
+    
+
     theriak = wrapper.TherCaller(programs_dir=BUILD_DIR,
                                  database=database_choice,
                                  theriak_version="v2023.01.02beta")
