@@ -19,9 +19,9 @@ with st.container(border=True):
 calc = st.button("run")
 
 if(calc):
-    theriak = wrapper.TherCaller(programs_dir="/theriak-domino/build",
-                             database=database_choice,
-                             theriak_version="v2023.01.02beta")
+    theriak = wrapper.TherCaller(programs_dir="/build",
+                                 database=database_choice,
+                                 theriak_version="v2023.01.02beta")
     rock, element_list = theriak.minimisation(pressure, temperature, bulk)
 
     print('---------------\n')
