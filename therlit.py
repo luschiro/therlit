@@ -1,15 +1,15 @@
 import streamlit as st
-# import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 import os
 from pytheriak import wrapper
 from pathlib import Path
 
+st.set_page_config(layout="centered")
 
 # title
 st.title("Welcome to Therlit!")
-st.write("#### A simple app to run Theriak!")
+st.write("#### A simple app to run Theriak.")
 
 # selections
 with st.container(border=True):
