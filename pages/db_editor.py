@@ -9,7 +9,7 @@ with open(file_path, 'r') as file:
 
 # Example usage
 # file_path = 'tcds55_p07_cord.bs'  # Replace with the path to your .bs file
-file_path = 'pages/JUN92d.bs'  # Replace with the path to your .bs file
+file_path = 'databases/JUN92d.bs'  # Replace with the path to your .bs file
 
 
 # Example usage
