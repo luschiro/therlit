@@ -39,7 +39,6 @@ if(calc):
     
 
     col1, col2 = st.columns(2)
-
     # bulk and chemistry
     with col1:
         with st.container(border=True):
