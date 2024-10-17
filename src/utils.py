@@ -4,7 +4,7 @@ def get_dirs():
     SRC_DIR = os.path.dirname(__file__)
     PROJECT_DIR = os.path.dirname(SRC_DIR)
     DATABASE_DIR = os.path.join(PROJECT_DIR, 'databases')
-    THERIAK_DIR = os.path.join(PROJECT_DIR, 'theriak')
+    THERIAK_DIR = os.path.join(PROJECT_DIR, 'theriak_runner')
     PAGES_DIR = os.path.join(PROJECT_DIR, 'pages')
 
     dir_dict = {
@@ -17,4 +17,3 @@ def get_dirs():
 
     return dir_dict
 
-THERIAK_DIR = get_dirs()['THERIAK']

@@ -757,4 +757,4 @@ CORD  crd   1.99102324E-01  fcrd   2.62282459E-01  mncrd   1.52758339E-03  hcrd 
 LIQtc  Silica8.liq   1.94135772E-01  albite.liq   1.37255646E-01  K-feldspar.liq   1.99163717E-01  anorthite.liq   1.43247045E-02  sillimanite8.liq   1.50284191E-02  forsterite8.liq   1.86192570E-03  fayalite8.liq   4.25986224E-03  H2O.liq   4.33969953E-01
 
  exit THERIAK
- CPU time:    0h 00m 00.44s
+ CPU time:    0h 00m 00.41s
