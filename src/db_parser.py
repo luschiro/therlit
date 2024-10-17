@@ -1,9 +1,10 @@
 import pandas as pd
 import streamlit as st
+
 # databases
-# file_path = 'pages/td-ds62-mb50-v07.txt'  # Replace with the path to your .bs file
-# file_path = 'pages/JUN92d.bs'  # Replace with the path to your .bs file
-file_path = 'pages/tcds55_p07_cord.bs'  # Replace with the path to your .bs file
+# file_path = 'databases/td-ds62-mb50-v07.txt'  # Replace with the path to your .bs file
+# file_path = 'databases/JUN92d.bs'  # Replace with the path to your .bs file
+file_path = 'databases/tcds55_p07_cord.bs'  # Replace with the path to your .bs file
 
 def parse_bs_file(file_path):
     
@@ -31,7 +32,7 @@ def parse_bs_file(file_path):
                 # Append the line to the current section's content
                 sections[current_section].append(stripped_line)
 
-    return sections
+    return sections 
 
 
 # print dict
