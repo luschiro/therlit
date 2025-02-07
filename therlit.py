@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 def main():
     home = st.Page("pagination/home.py")
     runner_page = st.Page("theriak_runner/runner.py")
